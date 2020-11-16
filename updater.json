@@ -2,11 +2,9 @@
     "url": "https://packagist.org",
     "package": "jamielsharief/updater-demo",
     "scripts": {
-        "before": [
-            "composer install --no-interaction"
-        ],
+        "before": [],
         "after": [
-            "vendor/bin/phpunit"
+            "composer install --no-interaction"
         ]
     }
 }
