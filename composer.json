@@ -1,5 +1,21 @@
 {
     "name": "jamielsharief/updater-demo",
     "type": "library",
-    "description": "A test package for updater"
+    "description": "A test package for updater",
+    "autoload": {
+        "psr-4": {
+            "UpdaterDemo\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "UpdaterDemo\\Test\\": "tests/"
+        }
+    },
+    "require": {
+        "php": ">=7.4.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.4"
+    }
 }

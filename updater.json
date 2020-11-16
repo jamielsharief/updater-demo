@@ -1,0 +1,12 @@
+{
+    "url": "https://packagist.org",
+    "package": "jamielsharief/updater-demo",
+    "scripts": {
+        "before": [
+            "composer install --no-interaction"
+        ],
+        "after": [
+            "vendor/bin/phpunit"
+        ]
+    }
+}
