@@ -6,6 +6,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## [0.3.0] - 2020-11-16
+
+### Added
+
+- Added hello.php
+
+### Changed
+
+- Changed updater to run the composer info command before and then update composer packages and run the new script hello
+
 ## [0.2.0] - 2020-11-16
 
 ### Added

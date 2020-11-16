@@ -2,9 +2,12 @@
     "url": "https://packagist.org",
     "package": "jamielsharief/updater-demo",
     "scripts": {
-        "before": [],
+        "before": [
+            "composer info"
+        ],
         "after": [
-            "composer update"
+            "composer update",
+            "php hello.php"
         ]
     }
 }
