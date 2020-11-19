@@ -1,5 +1,5 @@
 <?php
-namespace UpdaterDemo;
+namespace UpdaterDemo\Filesystem;
 
 use InvalidArgumentException;
 

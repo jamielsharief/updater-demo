@@ -3,11 +3,8 @@
     "package": "jamielsharief/updater-demo",
     "scripts": {
         "before": [
-            "composer info"
+            "php actions/upgrade-1.php"
         ],
-        "after": [
-            "composer update",
-            "php hello.php"
-        ]
+        "after": []
     }
 }
