@@ -11,13 +11,23 @@ $logger = new Logger([
 ]);
 
 $files = [
-   'src/Folder.php',
+    'src/Folder.php',
     'tests/TestCase/FolderTest.php'
 ];
 
 foreach ($files as $file) {
     $path = $base . '/' . $file;
-    if (file_exists($path) && unlink($path)) {
-        $logger->info('Deleting {name}', ['name' => $file]);
+    $logger->debug($path);
+
+    if (!file_exists($path)) {
+        $logger->warning('{name} not found', ['name' => $file]);
+        continue;
+    }
+    if (file_exists($path)) {
+        if (unlink($path)) {
+            $logger->info('{name} deleted', ['name' => $file]);
+        } else {
+            $logger->error('{name} not deleted', ['name' => $file]);
+        }
     }
 }

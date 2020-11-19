@@ -2,8 +2,8 @@
 declare(strict_types = 1);
 namespace UpdaterDemo\Test\TestCase\Filesystem;
 
-use UpdaterDemo\Fileystem\Folder;
 use PHPUnit\Framework\TestCase;
+use UpdaterDemo\Fileystem\Folder;
 
 class FolderTest extends TestCase
 {
